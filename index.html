@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" type="text/css" />
+    <title>Harshkumar Panchal</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#info">About me</a>
+      <a href="#education">Education</a>
+      <a href="#contactMe">Contact Me</a>
+    </nav>
+    <section id="home">
+      <img src="./files/hp_img.jpg" alt="" />
+      <h2>Harshkumar Panchal</h2>
+      <p>Software Engineer</p>
+      <a
+        class="button"
+        href="./files/Harshkumar_Panchal_Resume.pdf"
+        download="harshkumar_resume"
+        >Resume</a
+      >
+      <a class="button" href="#contactMe">Contact Me</a>
+    </section>
+
+    <section id="info">
+      <div class="abtMe">
+        <h3>About me and Academic Honesty</h3>
+        <p>
+          I declare that my assessment is wholly my own work in accordance with
+          Seneca Academic Policy. No part of this assessment has been copied
+          manually or electronically from any other source (including web sites)
+          except for the information supplied by the WEB222 instructors and / or
+          made available in this assessment for my use. I also declare that no
+          part of this assignment has been distributed to other students.
+        </p>
+        <span
+          >Date:
+          <time datetime="2022-12-08"> Aug 12,2022</time>
+        </span>
+      </div>
+      <div class="basic">
+        <h3>Basic Information</h3>
+        <div>
+          <span>AGE:</span>
+          <span>21</span>
+        </div>
+        <div>
+          <span>EMAIL:</span>
+          <span>hmpanchal2@myseneca.ca</span>
+        </div>
+        <div>
+          <span>LANGUAGE:</span>
+          <span>English, Gujarati, Hindi</span>
+        </div>
+        <div>
+          <span>CLASS SECTION:</span>
+          <span>ZAA</span>
+        </div>
+        <div>
+          <span>STUDENT ID:</span>
+          <span>125611210</span>
+        </div>
+        <div>
+          <span>INSTRUCTOR:</span>
+          <span>Muath Alzghool</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h3 class="head" id="eduHt">Education</h3>
+      <div class="eduContainer">
+        <div class="eduBox" id="boxOne">
+          <div id="edOne">
+            <p>2021 - 2023(expected)</p>
+            <h3>Post-secondary diploma</h3>
+          </div>
+          <div id="edTwo">
+            <h3>Post-secondary diploma</h3>
+            <h4>Seneca College</h4>
+            <p>Pursuing computer programming diploma at Seneca college.</p>
+          </div>
+        </div>
+        <div class="eduBox" id="boxTwo">
+          <div id="edThree">
+            <p>2020 - 2021</p>
+            <h3>1 year certification</h3>
+          </div>
+          <div id="edFour">
+            <h3>1 year certification</h3>
+            <h4>Coventry University</h4>
+            <p>
+              Completed one year of computer science certification from Coventry
+              university, UK.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contactMe">
+      <h2 class="head">Contact Me</h2>
+      <form
+        id="contactForm"
+        name="contactForm"
+        action="https://httpbin.org/post"
+        method="post"
+      >
+        <label for="frmName">Name</label>
+        <input
+          class="formClass"
+          id="name"
+          name="frmName"
+          type="text"
+          required
+        /><br />
+
+        <label for="frmEmail">Email</label>
+        <input
+          class="formClass"
+          id="email"
+          name="frmEmail"
+          type="email"
+          required
+        /><br />
+
+        <label for="fruAddress">Address</label>
+        <input
+          class="formClass"
+          type="text"
+          name="frmAddress"
+          id="address"
+          required
+        /><br />
+
+        <label for="frmCity">City</label>
+        <input
+          class="formClass"
+          type="text"
+          list="citylist"
+          name="frmCity"
+          id="city"
+          required
+        /><br />
+        <datalist id="citylist">
+          <option value="Toronto"></option>
+          <option value="Ottawa"></option>
+          <option value="Kitchener"></option>
+          <option value="Montreal"></option>
+          <option value="Vancouver"></option>
+          <option value="Surrey"></option>
+        </datalist>
+
+        <label for="frmPostalCode">Postal Code</label>
+        <input
+          class="formClass"
+          type="text"
+          name="frmPostalCode"
+          id="postalCode"
+          required
+        /><br />
+
+        <label for="frmMobile">Mobile Number</label>
+        <input class="formClass" type="tel" name="frmMobile" required /><br />
+
+        <div id="radDiv">
+          <label class="formClassRad" for="frmRadio">
+            <input type="radio" name="frmRadio" id="question" required />
+            Question
+          </label>
+
+          <label class="formClassRad" for="frmRadio">
+            <input type="radio" name="frmRadio" id="comment" required /> Comment
+          </label>
+
+          <label class="formClassRad" for="frmRadio">
+            <input type="radio" name="frmRadio" id="hiring" required /> Hiring
+          </label>
+        </div>
+        <input
+          class="formClass"
+          type="number"
+          name="frmWage"
+          id="wage"
+          step=".01"
+          placeholder="Hourly Wage"
+        />
+        <textarea
+          placeholder="Write a message"
+          rows="5"
+          cols="50"
+          id="frmText"
+          name="frmTxtArea"
+        ></textarea
+        ><br />
+
+        <input type="submit" value="Submit" name="frmSubmit" id="frmSubmit" />
+      </form>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
